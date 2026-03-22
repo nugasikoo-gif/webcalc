@@ -1,0 +1,120 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+    margin: 0;
+}
+
+.calculator {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    width: 320px;
+    max-width: 90%;
+}
+
+#display {
+    width: 100%;
+    height: 50px;
+    background-color: #222;
+    color: #0f0;
+    text-align: right;
+    font-size: 24px;
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    height: 60px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #555;
+    color: white;
+    transition: background 0.2s;
+    transition: opacity 0.15s;
+}
+
+button:hover {
+    background-color: #777;
+    opacity: 0.9;
+}
+
+button:active {
+    background-color: #444;
+    opacity: 0.2;
+}
+
+button.operator {
+    background-color: #f90;
+    transition: opacity 0.15s;
+}
+
+button.operator:hover {
+    background-color: #fa0;
+    opacity: 0.9;
+}
+
+button.operator:active {
+    background-color: #e68a00;
+    opacity: 0.2;
+}
+
+button.equals {
+    background-color: #28a745;
+    grid-column: span 4;
+    transition: opacity 0.15s;
+}
+
+button.equals:hover {
+    background-color: #218838;
+    opacity: 0.9;
+}
+
+button.equals:active {
+    background-color: #1e7e34;
+    opacity: 0.2;
+}
+
+button.clear {
+    background-color: #dc3545;
+    grid-column: span 1;
+}
+
+button.clear:hover {
+    background-color: #c82333;
+    opacity: 0.9;
+}
+
+button.clear:active {
+    background-color: #bd2130;
+    opacity: 0.2;
+} 
+.history-panel {
+    margin-top: 20px;
+    background: rgba(107, 100, 100, 0.747);
+    padding: 15px;
+    border-radius: 5px;
+    width: 320px;
+    max-width: 90%;
+}
+
+.history-item {
+    border-bottom: 1px solid #eee;
+    padding: 5px 0;
+    font-size: 14px;
+}
